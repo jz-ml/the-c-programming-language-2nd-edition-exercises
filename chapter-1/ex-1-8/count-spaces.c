@@ -8,7 +8,7 @@ main()
     nt = 0;
     nl = 0;
     while ((c = getchar()) != EOF) {
-        if (c == '\b') {
+        if (c == ' ') {
             ++nb;
         }
         if (c == '\t') {
@@ -18,4 +18,7 @@ main()
             ++nl;
         }
     }
+    printf("Blanks: %d\n", nb);
+    printf("Tabs: %d\n", nt);
+    printf("Newlines: %d\n", nl);
 }
