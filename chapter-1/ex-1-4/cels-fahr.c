@@ -9,6 +9,8 @@ main()
     upper = 300;    /* upper limit */
     step = 20;      /* step size */
 
+    printf("Celsius - Fahrenheit\n");
+
     cels = lower;
     while (cels <= upper) {
         fahr = ((9.0 * cels) / 5) + 32;
