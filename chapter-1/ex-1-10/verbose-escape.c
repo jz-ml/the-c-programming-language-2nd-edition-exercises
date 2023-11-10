@@ -7,9 +7,10 @@ main()
 {
     int c, state;
 
-    state = NON_ESCAPE_SEQ;
-
     while ((c = getchar()) != EOF) {
+
+        state = NON_ESCAPE_SEQ;
+
         if (c == '\t') {
             printf("\\t");
             state = ESCAPE_SEQ;
@@ -21,6 +22,9 @@ main()
         if (c == '\\') {
             printf("\\\\");
             state = ESCAPE_SEQ;
+        }
+        if (state == NON_ESCAPE_SEQ) {
+            putchar(c);
         }
     }
 }
