@@ -7,7 +7,7 @@
 
 main()
 {
-    int c, state;
+    int i, c, state;
     int word_length;
 
     while ((c = getchar()) != EOF) {
