@@ -10,6 +10,8 @@ main()
     int i, c, state;
     int word_length;
 
+    word_length = OUT;
+
     while ((c = getchar()) != EOF) {
         if (c == BLANK || c == NEWLINE) {
             if (state == IN) {
@@ -22,7 +24,6 @@ main()
             state = OUT;
         }
         else if (c != BLANK) {
-            
             state = IN;
             ++word_length;
         }
