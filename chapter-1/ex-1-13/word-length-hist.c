@@ -7,6 +7,7 @@
 main()
 {
     int c, state;
+    int word_length;
 
     while ((c = getchar()) != EOF) {
         if (c == BLANK) {
@@ -18,6 +19,7 @@ main()
         else if (c != BLANK) {
             putchar(c);
             state = IN;
+            ++word_length;
         }
     }
 }
