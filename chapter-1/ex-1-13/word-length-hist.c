@@ -16,6 +16,8 @@ main()
                 for (i = word_length; i > 0; --i) {
                     printf("@");
                 }
+                printf("\n");
+                word_length = OUT;
             }
             state = OUT;
         }
