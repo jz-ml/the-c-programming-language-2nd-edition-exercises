@@ -11,7 +11,7 @@ main()
     int word_length;
 
     while ((c = getchar()) != EOF) {
-        if (c == BLANK || NEWLINE) {
+        if (c == BLANK || c == NEWLINE) {
             if (state == IN) {
                 for (i = word_length; i > 0; --i) {
                     printf("@");
