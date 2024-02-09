@@ -13,7 +13,9 @@ main()
     while ((c = getchar()) != EOF) {
         if (c == BLANK || NEWLINE) {
             if (state == IN) {
-                
+                for (i = word_length; i > 0; --i) {
+                    printf("@");
+                }
             }
             state = OUT;
         }
