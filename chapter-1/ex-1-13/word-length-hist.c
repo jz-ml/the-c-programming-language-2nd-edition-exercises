@@ -3,6 +3,7 @@
 #define IN      1
 #define OUT     0
 #define BLANK   ' '
+#define NEWLINE '\n'
 
 main()
 {
@@ -10,7 +11,7 @@ main()
     int word_length;
 
     while ((c = getchar()) != EOF) {
-        if (c == BLANK) {
+        if (c == BLANK || NEWLINE) {
             if (state == IN) {
                 
             }
