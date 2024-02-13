@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+#define ALPHABET_LENGTH 26
+
 main()
 {
     int i, c;
