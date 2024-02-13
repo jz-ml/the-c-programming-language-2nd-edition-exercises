@@ -5,9 +5,9 @@
 main()
 {
     int i, c;
-    int alpha_chars[26];
+    int alpha_chars[ALPHABET_LENGTH];
 
-    for (i = 0; i < 26; ++i) {
+    for (i = 0; i < ALPHABET_LENGTH; ++i) {
         alpha_chars[i] = 0;
     }
 
