@@ -12,6 +12,6 @@ main()
     }
 
     while ((c = getchar()) != EOF) {
-        putchar(c);
+        
     }
 }
