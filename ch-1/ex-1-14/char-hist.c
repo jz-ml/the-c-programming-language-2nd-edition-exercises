@@ -12,6 +12,8 @@ main()
     }
 
     while ((c = getchar()) != EOF) {
-        
+        if ((c >= 'a' && c <= 'z')) {
+            ++alpha_chars[c - 'a'];
+        }
     }
 }
